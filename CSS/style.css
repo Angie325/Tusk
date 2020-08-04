@@ -5,8 +5,8 @@ body {
     color: white;
     background-color: black;
 }
-.introduction{
-    background-image:url(../IMAGES/background.jpg);
+.introduction {
+    background-image:url("../IMAGES/background.jpg");
     background-size: cover;
     text-align: center;
     color: rebeccapurple;
