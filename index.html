@@ -41,19 +41,19 @@
         <div class="pizza-menu row text-center">
             
             <figure class="col-sm-2">
-                <img src="IMAGES/doublecheese.jpg" alt="pizza-cheese" class="wiggle" width="100%">
+                <img src="IMAGES/pie.jpg" alt="pizza-cheese" class="wiggle" width="100%">
                 <figcaption>cheese pie<br>Ksh. 260</figcaption>
             </figure>
             <figure class="col-sm-2">
-                <img src="IMAGES/meat lover.jpg" alt="regular-pizza" class="wiggle" width="100%">
+                <img src="IMAGES/regular.jpg" alt="regular-pizza" class="wiggle" width="100%">
                 <figcaption>Regular<br>Ksh. 520</figcaption>
             </figure>
             <figure class="col-sm-2">
-                <img src="IMAGES/pepporoni.jpg" alt="medium-pizza" class="wiggle" width="100%">
+                <img src="IMAGES/medium.jpg" alt="medium-pizza" class="wiggle" width="100%">
                 <figcaption>Medium<br>Ksh. 740</figcaption>
             </figure>
             <figure class="col-sm-2">
-                <img src="IMAGES/vegetable.jpg" alt="large-pizza" class="wiggle" width="100%">
+                <img src="IMAGES/large.jpg" alt="large-pizza" class="wiggle" width="100%">
                 <figcaption>Large<br>Ksh. 1200</figcaption>
             </figure>
             <figure class="col-sm-2">
@@ -67,5 +67,69 @@
         </div>
     </div>
 </div>
+
+<div class="orders" id="order">
+    <h1 class="text-center" id="order-pizza">Orders</h1>
+    <div class="form-group row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8 order-overlay text-center">
+            <form class="col-sm-6 offset-sm-3 text-center">
+                <label>Pick your pizza Flavour:</label>
+                <select class="custom-select custom-select-md mb-3 flavour" required>
+                    <option value="periperi">Peri-Peri Chicken</option>
+                    <option value="bbq">BBQ Steak</option>
+                    <option value="chickentikka">Chicken tikka</option>
+                    <option value="bbq">BBQ Steak</option>
+                    <option value="boerewors">Boerewors</option>
+                    <option value="hawaiian">Hawaiian</option>
+                    <option value="mushroom">Chicken and Mushroom</option>
+                    <option value="vegtikka">Veg Tikka</option>
+                </select>
+
+                <label>Choose the size you want:</label>
+                <select class="custom-select custom-select-md mb-3" id="size" required>
+                    <option value="pizza-pie">Pizza-pie</option>
+                    <option value="regular">Regular</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                    <option value="double-stack">Double-stack</option>
+                    <option value="mega">Mega</option>
+                </select>
+
+                <label for="crust">Choose kind of Crust:</label>
+                <select class="custom-select custom-select-md mb-3" id="crust" required>
+                    <option value="thin">Thin Crust @ Ksh. 120</option>
+                    <option value="thick">Thick Crust @ Ksh. 170</option>
+                    <option value="flatbread">FlatBread Crust @ sh. 200</option>
+                    <option value="custom">Custom Crust @ sh. 270</option>
+                </select>
+
+                <label>Choose the toppings you want:</label>
+                <select class="custom-select custom-select-md mb-3" id="toppings" required>
+                    <option value="onions">Onions @ sh. 70</option>
+                    <option value="tomatoes">Tomatoes @ sh. 80</option>
+                    <option value="mushroom">Mushroom @ sh. 80</option>
+                    <option value="greenpepper">Green Pepper @ sh. 80</option>
+                    <option value="olives">Olives @ sh. 120</option>
+                    <option value="pineapple">Pineapple @ sh. 120</option>
+                    <option value="sweetcorn">Sweet Corn @ sh. 120</option>
+                    <option value="macon">Macon @ sh. 120</option>
+                    <option value="mince">Mince @ sh. 120</option>
+                    <option value="beef">Beef Peperoni @ sh. 170</option>
+                    <option value="chicken">Periperi Chicken @ sh. 170</option>
+                </select>
+
+                <label for="number">Number of Pizza's</label>
+                <input type="number" class="form-control" id="number" placeholder="Number of pizzas" min="1" required>
+
+            </form>
+
+            <a href="#summary">
+                <button type="submit" class="btn btn-primary checkout" id="checkout" onclick="calctotalPrice()">
+                    Checkout
+                </button>
+            </a>
+</div> 
+
 </body>
 </html>
