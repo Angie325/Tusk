@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    color: white;
+    background-color: black;
+}
+.introduction{
+    background-image:url(../IMAGES/background.jpg);
+    background-size: cover;
+    text-align: center;
+    color: rebeccapurple;
+    height:100%;
+    right: 100%;
+    left:100%;
+    font-family: cursive;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+h1{
+    color: darkblue;
+}
+.text-center{
+    color: violet;
+}
+.navbar{
+    background-color: darkmagenta;
+}
+.nav-link{
+    margin-right: 1em !important
+}
+.navbar-collapse{
+    justify-content: flex-end;
+}
+.formlocation{
+    color: darkviolet;
+    float: center;
+}
+.delivery-or-not{
+    justify-content: center;
+}
